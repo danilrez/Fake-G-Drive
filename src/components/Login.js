@@ -30,6 +30,13 @@ export default function Login() {
     <>
       <Card>
         <Card.Body>
+          <div className="d-flex align-items-center justify-content-center">
+            <img
+              alt="fake g-drive banner"
+              width="32%"
+              src="https://github.com/CrappyCodeMaker/Fake-G-Drive/blob/main/src/images/FG.png?raw=true"
+            />
+          </div>
           <h2 className="text-center mb-4">Log In</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
