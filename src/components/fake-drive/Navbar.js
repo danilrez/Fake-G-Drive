@@ -14,9 +14,12 @@ export default function NavbarComponent() {
           />
         </div>
       </Navbar.Brand>
-      <Nav.Link as={Link} to="/user">
-        Profile
-      </Nav.Link>
+
+      <Nav>
+        <Nav.Link as={Link} to="/user">
+          Profile
+        </Nav.Link>
+      </Nav>
     </Navbar>
   );
 }
