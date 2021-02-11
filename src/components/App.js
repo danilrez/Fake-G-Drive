@@ -1,10 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import { AuthProvider } from '../contexts/AuthContext';
-
-import Profile from './authentication/Profile';
 import Signup from './authentication/Signup';
+import { AuthProvider } from '../contexts/AuthContext';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Profile from './authentication/Profile';
 import Login from './authentication/Login';
 import PrivateRoute from './authentication/PrivateRoute';
 import ForgotPassword from './authentication/ForgotPassword';
@@ -16,9 +14,11 @@ function App() {
     <Router>
       <AuthProvider>
         <Switch>
-          {/* Fake Google Drive */}
+          {/* Drive */}
           <PrivateRoute exact path="/" component={Dashboard} />
-          {/* User */}
+          <PrivateRoute exact path="/folder/:folderId" component={Dashboard} />
+
+          {/* Profile */}
           <PrivateRoute path="/user" component={Profile} />
           <PrivateRoute path="/update-profile" component={UpdateProfile} />
 

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="sm">
+    <Navbar bg="light" expand="xs">
       <Navbar.Brand as={Link} to="/">
-        <div className="d-flex align-items-center justify-content-left">
+        <div>
           <img
             alt="fake g-drive banner"
             width="32%"

@@ -36,6 +36,9 @@ export default function Profile() {
         <Button variant="link" onClick={handleLogout}>
           Log Out
         </Button>
+        <Button variant="link" as={Link} to="/">
+          Back to drive
+        </Button>
       </div>
     </CenteredContainer>
   );
